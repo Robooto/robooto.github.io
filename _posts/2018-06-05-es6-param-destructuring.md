@@ -5,7 +5,7 @@ title: "Use ES6 destructuring with function parameters"
 
 # [](#javascript-es6-destructuring)javascript, es6, destructuring
 
-One of the features of es6 that I've had a hard time adopting is destructuring.  I have been trying to incorporate it into my code more and one use case that I couldn't find too much info on was using it for function parameters.  Sometimes (especially) when calling apis you can get a giant json blob back but probably you are only interested in a few properties.  This is where destructuring can come in real handy!
+One of the features of es6 that I've had a hard time adopting is destructuring.  I have been trying to incorporate it into my code more and one use case that I couldn't find too much info on was using it for function parameters.  Sometimes (especially) when calling apis you can get a giant json blob back but, probably, you are only interested in a few properties.  This is where destructuring can come in real handy!
 
 ### [](#fun-example)Fun Example
 
@@ -63,7 +63,7 @@ function displayCharacterInfo({name, origin: {name: origin}, episode: {[0]: epis
 }
 ```
 
-Since we only care about those 3 properties we can destructure that large json object into the properties we care about.  Destructuring can also be used to rename properties which you can see is how I change the origin.name property to just be called origin in the code.
+Since we only care about those 3 properties we can destructure that large json object into the properties we care about.  Destructuring can also be used to rename properties which you can see is how I change the origin.name property to just be called origin in the code.  This cleans up our code and eliminates us diving into the json object which in my opinion makes the code a little more readable.
 
 Another es6 feature we can take advantage of is default params.  What would happen if the api returned null data?  Well currently the app would throw an error.
 
