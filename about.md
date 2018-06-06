@@ -1,11 +1,11 @@
 ---
 layout: page
 title: About
-tagline: A few more words about this theme
+tagline: 
 permalink: /about.html
 ---
 
-This is the _Cayman Blog_ Jekyll theme. You can find out more info about customizing this theme, as well as basic usage documentation, and source code at: [cayman-blog](https://github.com/lorepirri/cayman-blog)
+I'm Sam Russell.  I taught myself to program at 29 and have been I've been a full-time programmer for over 3 years.  I'd like to give my perspective on learning to program, web-dev, and life.  Source code for this blog is located at  : [sam-blog](https://github.com/Robooto/robooto.github.io)
 
 You can find the source code for _Jekyll_ at [jekyll](https://github.com/jekyll/jekyll)
 

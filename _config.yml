@@ -1,5 +1,5 @@
 title: Sam's Blog
-description: I got some thoughts.
+description: I have some thoughts.
 show_downloads: true
 
 baseurl: "" 
@@ -16,6 +16,9 @@ author: "Sam Russell"
 image: /thumbnail-jumbo.png
 twitter:
   username: samwrussell
+github:
+  owner_url: "https://github.com/Robooto"
+  owner_name: "Sam Russell"
 #  site:
 facebook:
   #publisher: 1592372034171500
