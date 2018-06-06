@@ -1,5 +1,5 @@
-title: Cayman Blog Theme
-description: Cayman Blog Theme is a clean, responsive blogging theme for Jekyll and GitHub Pages, with social/SEO features.
+title: Sam's Blog
+description: I got some thoughts.
 show_downloads: true
 
 baseurl: "" 
@@ -12,10 +12,10 @@ cayman-blog:
 theme: # leave it empty
 
 # social
-author: "Lore Pirri"
+author: "Sam Russell"
 image: /thumbnail-jumbo.png
 twitter:
-  username: lorepirri
+  username: samwrussell
 #  site:
 facebook:
   #publisher: 1592372034171500
