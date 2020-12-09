@@ -26,13 +26,15 @@ The first step to pitch shift is to actually use JavaScript to stream the user's
 let mediaStreamSource;
 let audioContext;
 
+// create the audio context then connect the stream to our audio destination (browser)
 function processAudioStream(stream) {
     audioContext = new AudioContext();
     mediaStreamSource = audioContext.createMediaStreamSource(stream);
-
     mediaStreamSource.connect(audioContext.destination);
 }
 
+// Grab the media devices and passing in audio since we just want the mic
+// We pass the audio stream to our process function
 document.querySelector("#get-mic").addEventListener(
   "click",
   () => {
@@ -86,6 +88,7 @@ document.querySelector("#shift-it").addEventListener(
   { once: true }
 );
 
+// Using the input event from our html5 slider we can change the pitch of our mic!
 document.querySelector("#pitch").addEventListener("input", e => {
   if (!pitchChangeEffect) return;
   let offset = e.target.value;
@@ -95,3 +98,7 @@ document.querySelector("#pitch").addEventListener("input", e => {
 This was actually really fun to make and I spent way too long playing with it.
 
 See this code in action and have fun with the pitch changing [stackblitz](https://stackblitz.com/edit/pitch-shift)
+
+Now there are lots of things you can do with the audioContext api but don't take my work for it find out for yourself! 
+[Github with more examples](https://github.com/Robooto/js-pitch-shift)
+[AudioContext](https://developer.mozilla.org/en-US/docs/Web/API/AudioContext)
