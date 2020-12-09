@@ -100,5 +100,7 @@ This was actually really fun to make and I spent way too long playing with it.
 See this code in action and have fun with the pitch changing [stackblitz](https://stackblitz.com/edit/pitch-shift)
 
 Now there are lots of things you can do with the audioContext api but don't take my work for it find out for yourself! 
+
 [Github with more examples](https://github.com/Robooto/js-pitch-shift)
+
 [AudioContext](https://developer.mozilla.org/en-US/docs/Web/API/AudioContext)
