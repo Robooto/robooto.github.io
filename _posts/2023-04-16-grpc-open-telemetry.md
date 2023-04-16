@@ -13,7 +13,7 @@ I've created a simple project that you can use to get started with this.  You ca
 
 In this example project, we have a jaeger instance for visualizing open telemetry, a simple grpc service, and an api using the grpc client.  Get the app running by using `docker-compose up --build`.  Head over to http://localhost:5001/swagger/index.html and hit the `GET /Hello` endpoint.  Next open up jeager at http://localhost:16686/ and search for the `Hello` service.  You should see a trace with a single span.  If you click on the span you should see the following:
 
-![grpc-success](/assets/images/grpc-success.png)
+![grpc-success](/assets/images/jaeger-success.png)
 
 Great we can see our request.  Now let's implement the middleware to capture the errors.
 
@@ -45,7 +45,7 @@ builder.Services.AddGrpc(options => { options.Interceptors.Add<ErrorInterceptor>
 
 Now if we run the error request, we should see the following:
 
-![grpc-error](/assets/images/grpc-error.png)
+![grpc-error](/assets/images/jaeger-error.png)
 
 Since we added the interceptor to the service, we can see the error in the span and easily debug our service.
 
