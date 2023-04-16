@@ -5,13 +5,25 @@ title: "GRPC Errors and Open Telemetry"
 
 # [](#C#-grpc-errors-and-open-telemetry) C# GRPC Errors and Open Telemetry
 
-Open Telemetry is a great tool for any systems using microservices.  The ability to see the flow of requests through your system is invaluable.  However, when you start using GRPC, you'll find that the default Open Telemetry instrumentation doesn't capture the errors that are thrown by GRPC.  This is due to how the dot net team's grpc implementation. https://github.com/grpc/grpc-dotnet/issues/1407 To get around this lets implement our own middleware to address this issue.
+Open Telemetry is a great tool for any systems using microservices.
+The ability to see the flow of requests through your system is invaluable.
+However, when you start using GRPC,
+you'll find that the default Open Telemetry instrumentation doesn't capture the errors that are thrown by GRPC.
+This is due to how the dot net team's grpc implementation.
+To get around this, let's implement our own middleware to address this issue.
 
-I've created a simple project that you can use to get started with this.  You can find it here: https://github.com/Robooto/grpc-open-tel-exceptions
+I've created a simple project that you can use to get started with this.
+You can find it here: [example project](https://github.com/Robooto/grpc-open-tel-exceptions)
 
 ### [](#example-project)Example Project
 
-In this example project, we have a jaeger instance for visualizing open telemetry, a simple grpc service, and an api using the grpc client.  Get the app running by using `docker-compose up --build`.  Head over to http://localhost:5001/swagger/index.html and hit the `GET /Hello` endpoint.  Next open up jeager at http://localhost:16686/ and search for the `Hello` service.  You should see a trace with a single span.  If you click on the span you should see the following:
+In this example project, we have a jaeger instance for visualizing open telemetry,
+a simple grpc service, and an api using the grpc client.
+Get the app running by using `docker-compose up --build`.
+Head over to `http://localhost:5001/swagger/index.html` and hit the `GET /Hello` endpoint.
+Next open up jaeger at `http://localhost:16686/` and search for the `Hello` service.
+You should see a trace with a single span.
+If you click on the span, you should see the following:
 
 ![grpc-success](/assets/images/jaeger-success.png)
 
