@@ -5,8 +5,8 @@ tagline:
 permalink: /about.html
 ---
 
-I'm Sam Russell, a software developer in Portland, Oregon.
-I taught myself to program at 29 and have been I've been a full-time programmer since 2014.
+I'm Sam Russell, a software developer in Vancouver, Washington.
+I taught myself to program at 29 and have been a full-time programmer since 2014.
 I'd like to give my perspective on learning to program, web-dev, and life.
 Source code for this blog is located at  : [sam-blog](https://github.com/Robooto/robooto.github.io)
 
